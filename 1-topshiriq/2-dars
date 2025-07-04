@@ -1,0 +1,41 @@
+# menyu=["Lag'mon","Osh","Shashlik","Somsa","Choy"]
+# buyurtmalar=[]
+# narx=0
+# x=int(input("Hurmatli mijoz, nechta taom buyurasiz:"))
+# for i in range(0,x):
+#     buyurtma=input(f"{i+1}-buyutmani kiriting:")
+#     buyurtmalar.append(buyurtma)
+
+# if buyurtmalar:
+#     for taom in buyurtmalar:
+#         if taom in menyu:
+#             print(f"\nSizning {taom.title()} nomli buyutmangiz qabul qilindi")
+#         else:
+#             print(f"Sizning {taom.title()} nomli buyurtmangiz mavjud emas")
+
+# else:
+#     print("Savatchangiz bo'sh")
+
+# for a in buyurtmalar:
+#     if a =="Lag'mon":
+#         narx += 25000
+#     if a =="Osh":
+#         narx +=20000
+#     if a == "SHashlik":
+#         narx+=15000
+#     if a == "Somsa":
+#         narx+=5000
+#     if a =="Choy":
+#         narx+=3000
+
+# print(f"\nSizning buyurtmalar soningiz: {len(buyurtmalar)}")
+# print(f"Sizning tolovingiz: {narx}")
+
+
+
+
+
+
+
+
+

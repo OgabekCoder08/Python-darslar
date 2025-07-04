@@ -1,0 +1,4 @@
+Ali,85
+Laylo,90
+Bobur,notanlangan
+Zarina,78
