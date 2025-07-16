@@ -462,6 +462,77 @@
 
 
 
+# sevimli_kitobingiz = []
+# print("Sevimli kitobingizni kiriting.(Dastur toxtashi uchun 'stop' deb yozing): ")
+
+# while True:
+#     kitob = input("Sevimli kitobingizni kiriting...")
+#     if kitob.lower()== 'stop':
+#         break
+#     else:
+#         sevimli_kitobingiz.append(kitob)
+# print("\n Sizni sevimli kitobingiz:")
+# for k in sevimli_kitobingiz:
+#     print(kitob)
+
+
+# sevimli_kitob = []
+
+# print("Sevimli kitobingizni kriting.")
+# kitob = "Kitob nomini kiriting "
+# kitob += "(dasturni to'xtatish uchun 'stop' deb yozing): "
+
+# while True: 
+#      natija= input(kitob)
+#      if natija == 'stop':
+#         break 
+#      else:
+#         print(natija)
+
+
+
+# soz = input("mevani nomini kiriting: ")
+# natija = {}
+
+# for harf in soz:
+#     if harf in natija:
+#         natija[harf] += 1
+#     else:
+#         natija[harf] = 1
+
+# print(natija)
+
+# Input: {'a': 3, 'b': 8, 'c': 1, 'd': 6, 'e': 2}
+# Output: {'c': 1, 'e': 2, 'a': 3, 'd': 6, 'b': 8}
+
+
+# soz = input("So'z kiriting: ")
+# natija = {}
+# for harf in soz:
+#     if harf in natija:
+#         natija[harf] += 1
+#     else:
+    
+#         natija[harf] = 1
+
+
+# print(natija)
+
+
+import random
+tugri_son = random.randint(1, 10)
+while True:
+    taxmin = int(input("1 dan 10 gacha bo'lgan sonni toping: "))
+    if taxmin == tugri_son:
+        
+        print("Tabriklayman, siz topdingiz!")
+        break
+    else:
+        print("Xato! Qayta urinib ko'ring.")
+
+
+
+
 
 
 
