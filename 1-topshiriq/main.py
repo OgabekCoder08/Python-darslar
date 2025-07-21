@@ -519,19 +519,70 @@
 # print(natija)
 
 
-import random
-tugri_son = random.randint(1, 10)
-while True:
-    taxmin = int(input("1 dan 10 gacha bo'lgan sonni toping: "))
-    if taxmin == tugri_son:
+# import random
+# tugri_son = random.randint(1, 10)
+# while True:
+#     taxmin = int(input("1 dan 10 gacha bo'lgan sonni toping: "))
+#     if taxmin == tugri_son:
         
-        print("Tabriklayman, siz topdingiz!")
-        break
-    else:
-        print("Xato! Qayta urinib ko'ring.")
+#         print("Tabriklayman, siz topdingiz!")
+#         break
+#     else:
+#         print("Xato! Qayta urinib ko'ring.")
 
 
 
+
+oylar = {
+    1: "Yanvar",
+    2: "Fevral",
+    3: "Mart",
+    4: "Aprel",
+    5: "May",
+    6: "Iyun",
+    7: "Iyul",
+    8: "Avgust",
+    9: "Sentabr",
+    10: "Oktabr",
+    11: "Noyabr",
+    12: "Dekabr" 
+}
+son = int(input("Oy raqamini kiriting(1 dan 12 gacha): "))
+if son in oylar:
+    print(oylar[son])
+else:
+    print("Uzr bunday oy yo'q")
+
+
+
+# kurslar = {
+#    " usd": 12_682.31,
+#    "eur": 14_734,
+#    "rub": 161.35
+# }
+# valyuta = input("Valyutani tanlang (usd, eur, rub): ").lower()
+# miqdor = float(input("Miqdorni kiriting: "))
+
+# if valyuta in kurslar:
+#     som = miqdor * kurslar[valyuta]
+#     print(f"{miqdor} {valyuta.upper()} = {som:,.2f} so'm")
+# else:
+#     print("Noto‘g‘ri valyuta turi kiritildi.")
+
+
+
+
+# harakatlar = {
+#     "w": "Yuqoriga harakat",
+#     "a": "Chapga harakat",
+#     "s": "Pastga harakat",
+#     "d": "O'ngga harakat"
+# }
+# h = input("Harakatni kiriting: ")
+# if h in harakatlar:
+#     print(harakatlar[h])
+# else:
+#     print("Bunday ishora yo'q")
 
 
 
