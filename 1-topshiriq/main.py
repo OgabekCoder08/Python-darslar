@@ -729,14 +729,31 @@
 
 
 
+# from turtle import*
+# tracer(10)
+# bgcolor("black")
+# colors = ['white', 'red']
+# for i in range(180):
+#     color(colors[i % 2])
+#     rt(i)
+#     circle(150, i)
+#     fd(i)
+#     right(180)
+#     fd(i)
+#     hideturtle()
+#     done()
+
+
+
+
 from turtle import*
 tracer(10)
 bgcolor("black")
-colors = ['white', 'red']
-for i in range(180):
+colors = ['white', 'orange']
+for i in range(205):
     color(colors[i % 2])
     rt(i)
-    circle(150, i)
+    circle(200, i+2)
     fd(i)
     right(180)
     fd(i)
