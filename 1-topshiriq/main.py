@@ -533,25 +533,25 @@
 
 
 
-oylar = {
-    1: "Yanvar",
-    2: "Fevral",
-    3: "Mart",
-    4: "Aprel",
-    5: "May",
-    6: "Iyun",
-    7: "Iyul",
-    8: "Avgust",
-    9: "Sentabr",
-    10: "Oktabr",
-    11: "Noyabr",
-    12: "Dekabr" 
-}
-son = int(input("Oy raqamini kiriting(1 dan 12 gacha): "))
-if son in oylar:
-    print(oylar[son])
-else:
-    print("Uzr bunday oy yo'q")
+# oylar = {
+#     1: "Yanvar",
+#     2: "Fevral",
+#     3: "Mart",
+#     4: "Aprel",
+#     5: "May",
+#     6: "Iyun",
+#     7: "Iyul",
+#     8: "Avgust",
+#     9: "Sentabr",
+#     10: "Oktabr",
+#     11: "Noyabr",
+#     12: "Dekabr" 
+# }
+# son = int(input("Oy raqamini kiriting(1 dan 12 gacha): "))
+# if son in oylar:
+#     print(oylar[son])
+# else:
+#     print("Uzr bunday oy yo'q")
 
 
 
@@ -583,6 +583,121 @@ else:
 #     print(harakatlar[h])
 # else:
 #     print("Bunday ishora yo'q")
+
+
+
+
+
+# import pygame
+# import random
+# import sys
+
+# # O‘yin ekran o'lchami
+# WIDTH, HEIGHT = 400, 600
+# WHITE = (255, 255, 255)
+# GRAY = (50, 50, 50)
+# RED = (200, 0, 0)
+# BLUE = (0, 100, 255)
+# BLACK = (0, 0, 0)
+
+# pygame.init()
+# screen = pygame.display.set_mode((WIDTH, HEIGHT))
+# pygame.display.set_caption("🏁 Poyga O‘yini")
+# clock = pygame.time.Clock()
+# font = pygame.font.SysFont("Arial", 28)
+
+# # Avtomobil o‘lchami va koordinatalari
+# car_width = 50
+# car_height = 90
+# car_x = WIDTH // 2 - car_width // 2
+# car_y = HEIGHT - car_height - 10
+# car_speed = 7
+
+# # Dushman mashinasi
+# enemy_width = 50
+# enemy_height = 90
+# enemy_x = random.randint(0, WIDTH - enemy_width)
+# enemy_y = -enemy_height
+# enemy_speed = 5
+
+# score = 0
+
+# def draw_road():
+#     screen.fill(GRAY)
+#     pygame.draw.line(screen, WHITE, (WIDTH//2, 0), (WIDTH//2, HEIGHT), 4)
+#     pygame.draw.rect(screen, WHITE, (0, 0, 10, HEIGHT))  # chap yo'l chizig'i
+#     pygame.draw.rect(screen, WHITE, (WIDTH-10, 0, 10, HEIGHT))  # o'ng yo'l chizig'i
+
+# running = True
+# while running:
+#     clock.tick(60)
+#     draw_road()
+
+#     for event in pygame.event.get():
+#         if event.type == pygame.QUIT:
+#             running = False
+
+#     # Avtomobil harakati
+#     keys = pygame.key.get_pressed()
+#     if keys[pygame.K_LEFT] and car_x > 10:
+#         car_x -= car_speed
+#     if keys[pygame.K_RIGHT] and car_x < WIDTH - car_width - 10:
+#         car_x += car_speed
+
+#     # Dushman avtomobil harakati
+#     enemy_y += enemy_speed
+#     if enemy_y > HEIGHT:
+#         enemy_y = -enemy_height
+#         enemy_x = random.randint(10, WIDTH - enemy_width - 10)
+#         score += 1
+#         enemy_speed += 0.3  # Tezlik oshadi
+
+#     # To‘qnashuv tekshiruvi
+#     car_rect = pygame.Rect(car_x, car_y, car_width, car_height)
+#     enemy_rect = pygame.Rect(enemy_x, enemy_y, enemy_width, enemy_height)
+#     if car_rect.colliderect(enemy_rect):
+#         print(f"💥 Yutqazdingiz! Ochko: {score}")
+#         pygame.quit()
+#         sys.exit()
+
+#     # Mashinalarni chizish
+#     pygame.draw.rect(screen, BLUE, car_rect)
+#     pygame.draw.rect(screen, RED, enemy_rect)
+
+#     # Ochko chiqarish
+#     score_text = font.render(f"Ochko: {score}", True, BLACK)
+#     screen.blit(score_text, (10, 10))
+
+#     pygame.display.update()
+
+
+
+
+
+from turtle import*
+import math
+bgcolor("black")
+speed(100)
+color("red")
+pensize(2)
+def heart(n):
+    x = 15*math.sin(n)**3
+    y =12*math.cos(n)-5*\
+       math.cos(2*n)-2*\
+       math.cos(3*n)-\
+       math.cos(4*n)
+    return x,y
+for i in range(18):
+    pendown()
+    for j in range(0,100):
+        x, y = heart(j/15)
+        goto(x*i, y*i)
+    penup()
+    hideturtle()
+done()
+
+
+
 
 
 
