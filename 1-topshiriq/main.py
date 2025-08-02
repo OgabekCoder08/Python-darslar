@@ -674,29 +674,57 @@
 
 
 
+# from turtle import*
+# import math
+# bgcolor("black")
+# speed(100)
+# color("red")
+# pensize(2)
+# def heart(n):
+#     x = 15*math.sin(n)**3
+#     y =12*math.cos(n)-5*\
+#        math.cos(2*n)-2*\
+#        math.cos(3*n)-\
+#        math.cos(4*n)
+#     return x,y
+# for i in range(18):
+#     pendown()
+#     for j in range(0,100):
+#         x, y = heart(j/15)
+#         goto(x*i, y*i)
+#     penup()
+#     hideturtle()
+# done()
+
+
+
 from turtle import*
-import math
+
 bgcolor("black")
-speed(100)
-color("red")
 pensize(2)
-def heart(n):
-    x = 15*math.sin(n)**3
-    y =12*math.cos(n)-5*\
-       math.cos(2*n)-2*\
-       math.cos(3*n)-\
-       math.cos(4*n)
-    return x,y
-for i in range(18):
-    pendown()
-    for j in range(0,100):
-        x, y = heart(j/15)
-        goto(x*i, y*i)
-    penup()
-    hideturtle()
+color("green")
+left(90)
+backward(100)
+speed(200)
+shape("turtle")
+
+
+def tree(i):
+    if i < 10:
+        return
+    else:
+        forward(i)
+        color("orange")
+        circle(2)
+        color("brown")
+        left(30)
+        tree(3 * i / 4)
+        right(60)
+        tree(3 * i / 4)
+        left(30)
+        backward(i)
+tree(100)
 done()
-
-
 
 
 
