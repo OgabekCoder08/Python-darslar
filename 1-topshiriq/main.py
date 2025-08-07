@@ -745,17 +745,29 @@
 
 
 
+# def aylana_haqida(radius):
+#     diametr = 2 * radius
+#     uzunlik = 2 * 3.14 * radius
+#     yuza = 3.14 * radius * radius
+#     return{
+#         "radius":radius,
+#         "diameter":diametr,
+#         "perimetr":uzunlik,
+#         "area":yuza
+# }
 
-from turtle import*
-tracer(10)
-bgcolor("black")
-colors = ['white', 'orange']
-for i in range(205):
-    color(colors[i % 2])
-    rt(i)
-    circle(200, i+2)
-    fd(i)
-    right(180)
-    fd(i)
-    hideturtle()
-    done()
+# r = float(input("Radiusni kiriting: "))
+# natija =  aylana_haqida(r)
+# print(natija)
+
+
+
+
+
+def fibonacci(n):
+    fib = [1 ,1]
+    for i in range(2 , n):
+        fib.append(fib[i - 1] + fib[i - 2])
+    return fib
+n = int(input("Son kiriting: "))
+print(fibonacci(n))
